@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOTELES ARANWA</title>
+  <link rel="stylesheet" href="../css/styleColca.css">
+  <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo" onclick="redireccionAranwa()">
+          <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../html/ServiciosDetalles.html">Servicios</a></li>
+          <li><a href="../html/Nosotros.html">Nosotros</a></li>
+          <li><a href="../html/inicioreserva.html">Reservas</a></li>
+          <li><a href="../html/Hoteles.html">Hoteles</a></li>
+          <li><a href="../html/Login.html">Login/Registrarme</a></li>
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobilemmenu);
+
+    function mobilemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+  <section class="hotel Sacred valley ">
+    <div class="container">
+      <div class="heading">
+        <h3>ARANWA PUEBLITO ENCANTADO DEL COLCA</h3>
+      </div>
+      <div class="container">
+        <p style="text-align: center;">Despierta en el Valle del Colca rodeado de impresionantes paisajes y bellos
+          jardines, donde el encanto de la
+          naturaleza te envuelve. Aranwa Pueblito Encantado del Colca, ubicado a orillas del majestuoso río Colca, es el
+          destino ideal para desconectarte de la rutina y sumergirte en un mundo de magia andina, el hotel es perfecto
+          para grupos, parejas y familias, ofreciendo un ambiente de confort y tranquilidad que te hará sentir como en
+          casa.</p>
+        <p style="text-align: center;">Disfruta de una atención excepcional y de una experiencia única que celebra la
+          rica cultura del Valle. Desde
+          deliciosas opciones gastronómicas hasta actividades que te conectan con la tradición local, cada momento en el
+          Hotel Aranwa Pueblito Encantado del Colca está diseñado para dejar una huella en tu corazón.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hotel-info-section">
+    <div class="container">
+      <div class="hotel-info-grid">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="phone">
+          <i class="fas fa-phone"></i>
+          <span>(054) 383-850</span>
+        </div>
+        <div class="check-in">
+          <i class="fas fa-angle-double-right"></i>
+          <span>Check-in: 3:00pm</span>
+        </div>
+        <div class="check-out">
+          <i class="fas fa-angle-double-left"></i>
+          <span>Check-out: 12:00pm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="video-container">
+      <iframe width="1404" height="724" src="https://www.youtube.com/embed/qCTyU6oc_g8" title="Video de YouTube"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+
+  <section class="services-section">
+    <div class="container">
+      <h2 class="services-heading">Servicios e Instalaciones</h2>
+      <div class="services-grid">
+        <div>
+          <p><i class="fas fa-utensils"></i> Desayuno Buffet</p>
+          <p><i class="fas fa-wifi"></i> WiFi</p>
+          <p><i class="fas fa-parking"></i> Estacionamiento</p>
+          <p><i class="fas fa-briefcase"></i> Business Center</p>
+          <p><i class="fas fa-church"></i> Capilla</p>
+          <p><i class="fas fa-swimming-pool"></i> Piscina</p>
+          <p><i class="fas fa-tshirt"></i> Lavandería</p>
+          <p><i class="fas fa-book"></i> Biblioteca</p>
+        </div>
+        <div>
+          <p><i class="fas fa-spa"></i> Spa</p>
+          <p><i class="fas fa-utensils"></i> Restaurante</p>
+          <p><i class="fas fa-cocktail"></i> Bar</p>
+          <p><i class="fas fa-concierge-bell"></i> Room Service</p>
+          <p><i class="fas fa-heart"></i> Bodas</p>
+          <p><i class="fas fa-fish"></i> Piscigranja</p>
+          <p><i class="fas fa-fire"></i> Fogata</p>
+          <p><i class="fas fa-bicycle"></i> Bicicletas</p>
+        </div>
+        <div>
+          <p><i class="fas fa-water"></i> Molino de Agua</p>
+          <p><i class="fas fa-map-marker-alt"></i> Mirador</p>
+          <p><i class="fas fa-hot-tub"></i> Baños Termales</p>
+          <p><i class="fas fa-bus"></i> Servicio de Traslado</p>
+          <p><i class="fas fa-calendar-alt"></i> Sala de eventos</p>
+          <p><i class="fas fa-dog"></i> Dog Friendly*</p>
+          <p><i class="fas fa-gift"></i> Gift Shop</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rooms-section">
+    <div class="container">
+      <div class="room-content">
+        <div class="room-text">
+          <h3 style="text-align: center;">HABITACIONES</h3>
+          <p style="text-align: justify;">
+            El hotel ofrece habitaciones que cuentan con vista a la montaña y al Valle del Colca.
+          </p>
+          <p style="text-align: justify;">
+            Las habitaciones están diseñadas para brindarte el máximo confort durante tu estancia. Chalés y Suites en el
+            Valle del Colca com magníficas vistas.
+          </p>
+        </div>
+        <div class="room-image">
+          <img src="../imagenes/aranwa-colca-habitacion.png" alt="aranwa-colca-habitacion">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="spa-section">
+    <div class="container flex">
+      <div class="spa-text">
+        <h2 style="text-align: center;">SPA</h2>
+        <p style="text-align: justify;">
+          UNNO Spa promete una experiencia que le ayudará a alcanzar un equilibrio saludable entre mente, cuerpo y alma,
+          con la finalidad de obtener un estado de bienestar integral.
+        </p>
+        <p style="text-align: justify;">
+          Todos nuestros tratamientos y servicios están especialmente diseñados para la relajación y la conexión
+          interior, disfruta de un spa en el Valle del Colca sirviendo como escenario este Pueblito Encantado.
+        </p>
+      </div>
+      <div class="spa-image">
+        <img src="../imagenes/aranwa-colca-spa.png" alt="Spa">
+      </div>
+    </div>
+  </section>
+
+  <section class="activities-section">
+    <div class="container">
+      <h3 class="activities-heading">ACTIVIDADES</h3>
+      <div class="activities-grid">
+        <div class="activity">
+          <img src="../imagenes/aranwa-colca-pesca.png" alt="aranwa-colca-pesca">
+          <div class="activity-caption">PESCA</div>
+        </div>
+        <div class="activity">
+          <img src="../imagenes/aranwa-colca-bicicleta.png" alt="aranwa-colca-bicicleta">
+          <div class="activity-caption">BICICLETA</div>
+        </div>
+        <div class="activity">
+          <img src="../imagenes/aranwa-colca-alpaca.png" alt="aranwa-colca-bicicleta">
+          <div class="activity-caption">ALIMENTACIÓN A LAS ALPACAS BEBÉS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant-bar-section">
+    <div class="container">
+      <h2 class="restaurant-bar-heading">Restaurante & Bar</h2>
+      <div class="restaurant-bar-grid">
+        <div class="restaurant">
+          <img src="../imagenes/molino-colca-restaurante.png" alt="molino-colca-restaurante">
+          <div class="caption">RESTAURANTE EL MOLINO</div>
+        </div>
+        <div class="restaurant">
+          <img src="../imagenes/cabana-bar-colca.png" alt="bar cabana-bar-colca">
+          <div class="caption">BAR CABANA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Suscríbete</h2>
+        <p>Recibe las últimas noticias y promociones directamente en tu correo</p>
+        <div class="input flex">
+          <input type="email" placeholder="Ingresa tu correo ">
+          <button class="flex1" onclick="redireccion()">
+            <span>Registrarme</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa" width="180" height="50">
+          </div>
+          <div class="social flex">
+            <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+              <i class="fab fa-tripadvisor"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>ARANWA</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>DESTINOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/CUSCO.html">Cusco</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/SACRED VALLEY.html">Valle Sagrado</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/COLCA.html">Colca</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/PARACAS.html">Paracas</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/VICHAYITO.html">Vichayito</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>SERVICIOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Eventos.html">Eventos</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Spa.html">Spa</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Bodas.html">Bodas</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Información de Contacto</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Oficionas Coorporativas</h3>
+              <p>​Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Central de Reservas</h3>
+              <p>511 207-0440</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Correo de Reserva:</h3>
+              <p>reservas@aranwahotels.com</p>
+              <h3>Correo de Contacto:</h3>
+              <p>consultas@aranwahotels.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pie inferior -->
+    <div class="footer-bottom">
+      <a href="../html/SiteMap.html">Ver Sitemap del sitio</a>
+      <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+    </div>
+    
+  </footer>
+</body>
+
+</html>

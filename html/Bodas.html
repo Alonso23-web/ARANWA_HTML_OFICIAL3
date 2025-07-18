@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BODAS ARANWA</title>
+  <link rel="stylesheet" href="../css/styleBodas.css">
+  <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo" onclick="redireccionAranwa()">
+          <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../html/ServiciosDetalles.html">Servicios</a></li>
+          <li><a href="../html/Nosotros.html">Nosotros</a></li>
+          <li><a href="../html/inicioreserva.html">Reservas</a></li>
+          <li><a href="../html/Hoteles.html">Hoteles</a></li>
+          <li><a href="../html/Login.html">Login/Registrarme</a></li>
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>511 207-0440</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobilemmenu);
+
+    function mobilemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+  <section class="bodas general">
+    <div class="containers">
+      <div class="heading">
+        <h4>BODAS</h4>
+        <h4>Para tu boda o evento religioso, ponemos a tu disposición nuestras instalaciones. Nuestro equipo estará al
+          pendiente de la decoración, el buffet, la música, las bebidas y todos los detalles para que te lleves el mejor
+          recuerdo de tu vida.</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/kU-NGi5WgiY" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section class="boda gallary">
+    <div class="heading">
+      <h4>RECUERDOS</h4>
+    </div>
+    <div class="owl-carousel owl-carousel">
+      <div class="item">
+        <img src="../imagenes/Boda1.png" alt="Boda 1">
+      </div>
+      <div class="item">
+        <img src="../imagenes/Boda2.png" alt="Boda 2">
+      </div>
+      <div class="item">
+        <img src="../imagenes/Boda3.png" alt="Boda 3">
+      </div>
+      <div class="item">
+        <img src="../imagenes/Boda4.png" alt="Boda 4">
+      </div>
+      <div class="item">
+        <img src="../imagenes/Boda5.png" alt="Boda 5">
+      </div>
+      <div class="item">
+        <img src="../imagenes/Boda6.png" alt="Boda 6">
+      </div>
+      <div class="item">
+        <img src="../imagenes/Boda7.png" alt="Boda 7">
+      </div>
+      <div class="item">
+        <img src="../imagenes/Boda8.png" alt="Boda 8">
+      </div>
+      <div class="item">
+        <img src="../imagenes/Boda9.png" alt="Boda 9">
+      </div>
+    </div>
+  </section>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script cript src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+  <section class="dream-wedding">
+    <div class="container">
+      <div class="heading">
+        <h4>VIVE UNA BODA DE ENSUEÑO</h4>
+        <p style="font-size: 25px;">Destinos Encantadores</p>
+        <p style="font-size: 25px;">Lugares con paisajes llenos de magia y buena energía.</p>
+      </div>
+
+      <div class="features">
+        <div class="feature-item">
+          <i class="fas fa-gift"></i>
+          <h5>Servicios Personalizados</h5>
+          <p>Una boda hecha a la medida de los novios, con los servicios y detalles que ellos desean.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-bed"></i>
+          <h5>Alojamiento Para Novios e Invitados</h5>
+          <p>Paquetes especiales de alojamiento para disfrutar más de la fiesta.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-user-tie"></i>
+          <h5>Equipo Especializado</h5>
+          <p>Orientación en todo momento para garantizar el excelente desarrollo de la boda.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-building"></i>
+          <h5>Salones</h5>
+          <p>Ambientes para cada concepto nupcial: desde bodas íntimas hasta bodas grandes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wedding-section">
+    <div class="wedding-header">
+      <h1>CELEBRA EL DÍA DE TU BODA EN LOS MEJORES DESTINOS</h1>
+    </div>
+    <div class="button-container">
+      <a href="#Aranwa Colca" class="image-button">
+        <img src="../imagenes/BodaColca.png" alt="Boda en el Colca">
+        <span>Aranwa Colca</span>
+      </a>
+      <a href="#Aranwa Cusco" class="image-button">
+        <img src="../imagenes/BodaCusco.png" alt="Boda en Cusco">
+        <span>Aranwa Cusco</span>
+      </a>
+      <a href="#Aranwa Paracas" class="image-button">
+        <img src="../imagenes/BodaParacas.png" alt="Boda en Paracas">
+        <span>Aranwa Paracas</span>
+      </a>
+      <a href="#Aranwa Vichayito" class="image-button">
+        <img src="../imagenes/BodaVichayito.png" alt="Boda en Vichayito">
+        <span>Aranwa Vichayito</span>
+      </a>
+      <a href="#Aranwa Valle Sangrado" class="image-button">
+        <img src="../imagenes/BodaValleSagrado.png" alt="Boda en Valle Sagrado">
+        <span>Aranwa Valle Sangrado</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="customer top">
+    <div class="container">
+      <div class="heading">
+        <h5>TESTIMONIOS DE LOS NOVIOS</h5>
+        <h3>Las voces de quienes ya nos escogieron</h3>
+      </div>
+      <div class="testimonials">
+        <div class="owl-carousel owl-theme mtop">
+          <div class="item">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Aranwa Paracas Resort & Spa</h3>
+            <p>Siempre quise casarme en el atardecer y junto al mar, y sinceramente no encontré esto en ningún otro
+              lugar cerca a Lima, salvo en Aranwa
+              Lo más difícil para una pareja son los preparativos y todo lo que esto implica, pero nos sentimos más que
+              satisfechos con la disposición y resultados que obtuvimos.
+              Queríamos un lugar, en donde, no solo nosotros pasamos un tiempo inolvidable, sino, también, toda nuestra
+              familia y amigos
+            <div class="admin flex">
+              <div class="text">
+                <h3>Cesar y Cheche</h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Vichayito Bungalows & Carpas by Aranwa</h3>
+            <p>Nos casamos en Aranwa Vichayito. Fue una excelente atención, servicio y linda experiencia. Sí, los
+              recomendaría, fue lo mejor de nuestras vidas y los invitados quedaron encantados.</p>
+            <div class="admin flex">
+              <div class="text">
+                <h3>Silvana y Nicolás</h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Aranwa Cusco Boutique Hotel</h3>
+            <p>Fue una grata experiencia, desde el primer momento fueron muy atentos con nuestros requerimientos y nos
+              brindaron muchas facilidades.
+              Nos encontramos muy contentos con el extraordinario servicio durante la recepción de nuestra fiesta de
+              compromiso (pedida de mano). Definitivamente, si los recomendaríamos
+              La atención del personal es excepcional y muy cálida, estando siempre al pendiente de pequeños detalles,
+              brindando una atención personalizada a todos nuestros invitados; sumado a ello, están las hermosas
+              instalaciones que fueron espléndidamente adecuadas a nuestro gusto. Sin duda alguna, volvemos por más
+              actividades.</p>
+            <div class="admin flex">
+              <div class="text">
+                <h3>Joseph y Dennisse</h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Aranwa Sacred Valley Hotel & Wellness</h3>
+            <p>Organizamos nuestra boda desde Australia, y apenas vimos las fotos de la Capilla del Hotel Aranwa en el
+              Valle de Urubamba, nos enamoramos de ella.
+              No nos equivocamos en nuestra elección, la coordinación a distancia fue süper fácil, las instalaciones del
+              hotel son hermosas, la atención del personal es excelente y nuestros huéspedes quedaron encantados.
+              Recibimos una cálida bienvenida a nuestra llegada, todos estuvieron muy contentos con el alojamiento.
+              La comida era siempre fresca y sabrosa, las instalaciones estupendas y el hotel estaba limpio y ordenado.
+              El personal siempre con una sonrisa en el rostro. Definitivamente, recomendamos el hotel para unas
+              vacaciones o una ocasión especial. Todavía seguimos impresionados con el lugar. De todas maneras pensamos
+              volver.</p>
+            <div class="admin flex">
+              <div class="text">
+                <h3>Rob y Karina</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Suscríbete</h2>
+        <p>Recibe las últimas noticias y promociones directamente en tu correo</p>
+        <div class="input flex">
+          <input type="email" placeholder="Ingresa tu correo ">
+          <button class="flex1" onclick="redireccion()">
+            <span>Registrarme</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa" width="180" height="50">
+          </div>
+          <div class="social flex">
+            <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+              <i class="fab fa-tripadvisor"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>ARANWA</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>DESTINOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/CUSCO.html">Cusco</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/SACRED VALLEY.html">Valle Sagrado</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/COLCA.html">Colca</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/PARACAS.html">Paracas</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/VICHAYITO.html">Vichayito</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>SERVICIOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Eventos.html">Eventos</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Spa.html">Spa</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Bodas.html">Bodas</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Información de Contacto</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Oficionas Coorporativas</h3>
+              <p>​Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Central de Reservas</h3>
+              <p>511 207-0440</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Correo de Reserva:</h3>
+              <p>reservas@aranwahotels.com</p>
+              <h3>Correo de Contacto:</h3>
+              <p>consultas@aranwahotels.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie inferior -->
+    <div class="footer-bottom">
+      <a href="../html/SiteMap.html">Ver Sitemap del sitio</a>
+      <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+    </div>
+    
+  </footer>
+</body>
+
+</html>

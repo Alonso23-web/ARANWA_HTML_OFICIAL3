@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOTELES ARANWA</title>
+  <link rel="stylesheet" href="../css/styleValle.css">
+  <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo" onclick="redireccionAranwa()">
+          <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../html/ServiciosDetalles.html">Servicios</a></li>
+          <li><a href="../html/Nosotros.html">Nosotros</a></li>
+          <li><a href="../html/inicioreserva.html">Reservas</a></li>
+          <li><a href="../html/Hoteles.html">Hoteles</a></li>
+          <li><a href="../html/Login.html">Login/Registrarme</a></li>
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobilemmenu);
+
+    function mobilemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>¡EXCLUSIVIDAD Y CONFOTR, DISEÑADO SOLO PARA TI!</h1>
+    </div>
+  </section>
+
+  <section class="hotel Sacred valley ">
+    <div class="container">
+      <div class="heading">
+        <h3>ARANWA SACRED VALLEY HOTEL& WELLNES</h3>
+      </div>
+      <div class="container">
+        <p style="text-align: center;">Despierta cada día rodeado de imponentes paisajes y sumérgete en la riqueza
+          cultural del Valle Sagrado de los
+          Incas en, Aranwa Sacred Valley Hotel & Wellness, donde la historia y la naturaleza se fusionan en uno de los
+          paisajes más impresionantes del mundo. Hotel en el Valle Sagrado en Perú ubicado a orillas del río
+          Vilcanota, en una majestuosa hacienda colonial del siglo XVII, nuestro hotel te ofrece una experiencia
+          inigualable.</p>
+        <p style="text-align: center;">Nuestras habitaciones, con una perfecta combinación de estilo colonial y moderno,
+          son un refugio de comodidad
+          y elegancia.</p>
+        <p style="text-align: center;">¡Haz de tu estadía una experiencia verdaderamente memorable en este rincón único
+          del mundo!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hotel-info-section">
+    <div class="container">
+      <div class="hotel-info-grid">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <a href="https://www.google.com/maps/place/Aranwa+Sacred+Valley+Hotel+%26+Wellness/@-13.3302208,-72.0547419,17z/data=!4m9!3m8!1s0x916ddd1e4a80629d:0xdfc221ebc1d5a840!5m2!4m1!1i2!8m2!3d-13.330226!4d-72.052167!16s%2Fg%2F11xhrs24l?entry=tts&g_ep=EgoyMDI0MDkyOS4wIPu8ASoASAFQAw%3D%3D"
+            target="_blank">
+            Antigua Hacienda Yaravilca, Huayllabamba, Urubamba, Cusco
+          </a>
+        </div>
+        <div class="phone">
+          <i class="fas fa-phone"></i>
+          <span>(084) 581-900</span>
+        </div>
+        <div class="check-in">
+          <i class="fas fa-angle-double-right"></i>
+          <span>Check-in: 3:00pm</span>
+        </div>
+        <div class="check-out">
+          <i class="fas fa-angle-double-left"></i>
+          <span>Check-out: 12:00pm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="video-container">
+      <iframe width="1404" height="724" src="https://www.youtube.com/embed/zOFIkP4gw1k" title="Video de YouTube"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+
+  <section class="services-section">
+    <div class="container">
+      <h2 class="services-heading">SERVICIOS E INSTALACIONES</h2>
+      <div class="services-grid">
+        <div>
+          <p><i class="fas fa-utensils"></i> Desayuno Buffet</p>
+          <p><i class="fas fa-wifi"></i> WiFi</p>
+          <p><i class="fas fa-parking"></i> Estacionamiento</p>
+          <p><i class="fas fa-briefcase"></i> Business Center</p>
+          <p><i class="fas fa-tshirt"></i> Lavandería</p>
+          <p><i class="fas fa-book"></i> Biblioteca</p>
+          <p><i class="fas fa-spa"></i> Spa</p>
+          <p><i class="fas fa-utensils"></i> Restaurante</p>
+        </div>
+        <div>
+          <p><i class="fas fa-cocktail"></i> Bar</p>
+          <p><i class="fas fa-concierge-bell"></i> Room Service</p>
+          <p><i class="fas fa-heart"></i> Bodas</p>
+          <p><i class="fas fa-image"></i> Galería de Arte</p>
+          <p><i class="fas fa-landmark"></i> Museo de sitio</p>
+          <p><i class="fas fa-film"></i> Cine</p>
+          <p><i class="fas fa-fish"></i> Área de Pesca</p>
+          <p><i class="fas fa-leaf"></i> Orquideario</p>
+        </div>
+        <div>
+          <p><i class="fas fa-shopping-bag"></i> Tiendas de Artesanía</p>
+          <p><i class="fas fa-seedling"></i> Biohuerto</p>
+          <p><i class="fas fa-swimming-pool"></i> Piscina</p>
+          <p><i class="fas fa-hot-tub"></i> Jacuzzi exterior</p>
+          <p><i class="fas fa-door-open"></i> Sala de eventos</p>
+          <p><i class="fas fa-church"></i> Capilla</p>
+          <p><i class="fas fa-dog"></i> Dog friendly</p>
+          <p><i class="fas fa-gift"></i> Gift shop</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rooms-section">
+    <div class="container">
+      <div class="room-content">
+        <div class="room-text">
+          <h3 style="text-align: center;">HABITACIONES</h3>
+          <p style="text-align: justify;">
+            El hotel ofrece habitaciones, cada una con vista al río Vilcanota, jardines internos y lagos.
+          </p>
+          <p style="text-align: justify;">
+            Las habitaciones están finamente decoradas pensando en cada detalle para el deleite de sus huéspedes.
+          </p>
+        </div>
+        <div class="room-image">
+          <img src="../imagenes/aranwa-sacred-valley-suite.png" alt="aranwa-sacred-valley-suite">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events-section">
+    <div class="container">
+      <div class="event-content">
+        <div class="event-image">
+          <img src="../imagenes/aranwa-sacred-valley-bodas.png" alt="aranwa-sacred-valley-bodas">
+        </div>
+        <div class="event-text">
+          <h3>EVENTOS</h3>
+          <p style="text-align: justify;">
+            El hotel cuenta con diversos ambientes para organizar eventos sociales y corporativos, entre los que se
+            encuentran el patio, los jardines o el salón de usos múltiples. Otros ambientes como el patio principal de
+            la casona Yaravilca, cuenta con capacidad para 80 personas. La terraza ideal para desayunos, almuerzos y
+            cenas al aire libre, cuenta con una hermosa vista a la piscina. Además de la infraestructura necesaria, el
+            hotel brinda el servicio de alimentos y bebidas con una amplia variedad de menús para su evento. Si estas
+            pensando en organizar eventos en el Valle Sagrado esta es tu hotel ideal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="spa-section">
+    <div class="container flex">
+      <div class="spa-text">
+        <h2>SPA</h2>
+        <p style="text-align: justify;">
+          UNNO SPA es un espacio hacia el enigmático mundo de la sabiduría ancestral de los Incas, que unen los
+          conocimientos tradicionales del Valle Sagrado, la medicina alternativa y lo último en tecnología cosmética,
+          brindando servicios de la más alta calidad con productos 100% naturales. Nuestro hotel con spa en el Vall
+          Sagrado incluye exclusvios tratamientos y masajes.
+        </p>
+      </div>
+      <div class="spa-image">
+        <img src="../imagenes/aranwa-sacred-valley-spa.png" alt="Spa">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="activities-section">
+    <div class="container">
+      <h3 class="activities-heading">ACTIVIDADES</h3>
+      <div class="activities-grid">
+        <div class="activity">
+          <img src="../imagenes/aranwa-cocina.png" alt="aranwa-cocina">
+          <div class="activity-caption">COCINA COLONIAL</div>
+        </div>
+        <div class="activity">
+          <img src="../imagenes/aranwa-sacred-valley-picni.png" alt="aranwa-sacred-valley-picni">
+          <div class="activity-caption">PICNIC</div>
+        </div>
+        <div class="activity">
+          <img src="../imagenes/aranwa-sacred-valley-pesca.png" alt="aranwa-sacred-valley-pesca">
+          <div class="activity-caption">PESCA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="restaurant-bar-section">
+    <div class="container">
+      <h2 class="restaurant-bar-heading">Restaurante & Bar</h2>
+      <div class="restaurant-bar-grid">
+        <div class="restaurant">
+          <img src="../imagenes/aranwa-pukawi-valle-sagrado.png" alt="aranwa-pukawi-valle-sagrado">
+          <div class="caption">RESTAURANTE PUKAWI</div>
+        </div>
+        <div class="restaurant">
+          <img src="../imagenes/aranwa-kuzi-bar.png" alt="aranwa-kuzi-bar Bar">
+          <div class="caption">KUZI BAR</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Suscríbete</h2>
+        <p>Recibe las últimas noticias y promociones directamente en tu correo</p>
+        <div class="input flex">
+          <input type="email" placeholder="Ingresa tu correo ">
+          <button class="flex1" onclick="redireccion()">
+            <span>Registrarme</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa" width="180" height="50">
+          </div>
+          <div class="social flex">
+            <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+              <i class="fab fa-tripadvisor"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>ARANWA</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>DESTINOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/CUSCO.html">Cusco</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/SACRED VALLEY.html">Valle Sagrado</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/COLCA.html">Colca</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/PARACAS.html">Paracas</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/VICHAYITO.html">Vichayito</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>SERVICIOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Eventos.html">Eventos</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Spa.html">Spa</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Bodas.html">Bodas</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Información de Contacto</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Oficionas Coorporativas</h3>
+              <p>​Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Central de Reservas</h3>
+              <p>511 207-0440</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Correo de Reserva:</h3>
+              <p>reservas@aranwahotels.com</p>
+              <h3>Correo de Contacto:</h3>
+              <p>consultas@aranwahotels.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pie inferior -->
+    <div class="footer-bottom">
+      <a href="../html/SiteMap.html">Ver Sitemap del sitio</a>
+      <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

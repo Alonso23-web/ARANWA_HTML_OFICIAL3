@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSOTROS</title>
+    <link rel="stylesheet" href="../css/styleNosotros.css">
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo" onclick="redireccionAranwa()">
+                    <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../html/ServiciosDetalles.html">Servicios</a></li>
+                    <li><a href="../html/Nosotros.html">Nosotros</a></li>
+                    <li><a href="../html/inicioreserva.html">Reservas</a></li>
+                    <li><a href="../html/Hoteles.html">Hoteles</a></li>
+                    <li><a href="../html/Login.html">Login/Registrarme</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobilemmenu);
+
+        function mobilemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <section class="inicio">
+        <div class="container">
+            <h1>DONDE TUS RECUERDOS COMIENZAN</h1>
+            <p>Descubre el lugar donde divertirte y disfrutar mucho</p>
+        </div>
+    </section>
+
+    <section class="nosotros" id="Nosotros">
+        <div class="container">
+            <section class="about-us">
+                <h1>Nosotros</h1>
+                <p>Aranwa Hotels Resorts & Spas es una colección de hoteles que ofrece la más atractiva guía de destinos
+                    en el Perú. Siendo la combinación perfecta de cultura y bienestar, así como de las experiencias más
+                    auténticas en materia de spas, hospitalidad y servicios turísticos que puede encontrar en cada uno
+                    de nuestros hoteles.</p>
+                <p>«Aranwa» en quechua significa «leyenda». Una palabra que captura la historia y el mito, el encanto y
+                    el misterio, la belleza de lo natural y la sofisticación de la modernidad, todas estas sensaciones
+                    que nuestros huéspedes pueden experimentar de manera única en nuestros hoteles. Dentro de la
+                    colección, cada hotel es diferente; de esta manera, los huéspedes gozan de lo mejor de cada destino
+                    turístico con el singular toque distintivo de Aranwa que los invita a descubrir, disfrutar y
+                    descansar.</p>
+                <p>En octubre de 2008 se inauguró el primer hotel, Aranwa Sacred Valley Hotel & Wellness, ubicado en el
+                    Valle de Urubamba, a orillas del río Vilcanota. Este hotel ha sido construido en un terreno de 10
+                    hectáreas, propiedad de una hacienda colonial del siglo XVII, que fue restaurada conservando los
+                    detalles originales de su época. Además, cuenta con uno de los Spas más grandes de Sudamérica con
+                    2500m².</p>
+                <p>Actualmente, ofrecemos cinco destinos dentro del Perú: Cusco, Valle Sagrado, Colca, Paracas y
+                    Vichayito.</p>
+            </section>
+        </div>
+    </section>
+
+    <section class="mision">
+        <div class="container">
+            <div class="mission-vision">
+                <h2>Misión</h2>
+                <p>Proveer servicios de hotelería y turismo de la más alta calidad, así como tratamientos de spa
+                    exclusivos y adecuados al destino, buscando armonía con el medio ambiente y valoración de la
+                    cultura.</p>
+                <h2>Visión</h2>
+                <p>Posicionarse como la marca líder en servicios de hotel y spa en el Perú.</p>
+                <h2>Principios</h2>
+                <ul>
+                    <li>Servicio amable para satisfacer a nuestros huéspedes y superar sus expectativas.</li>
+                    <li>Responsabilidad para nuestros huéspedes, trabajadores, comunidades y medio ambiente.</li>
+                    <li>Salud a través de nuestro spa.</li>
+                    <li>Cultura para revalorar el legado de nuestros antepasados.</li>
+                    <li>Personalizar la experiencia de cada huésped y aplicarla en la cadena.</li>
+                </ul>
+            </div>
+            <div class="image-column">
+                <img src="../imagenes/FontAranwa.png" alt="Imagen Misión y Visión">
+                <img src="../imagenes/FontAranwa2.png" alt="Imagen Misión y Visión">
+            </div>
+        </div>
+    </section>
+
+    <section class="salud-bienestar">
+        <div class="container">
+            <div class="health-wellness">
+                <h2>Salud y Bienestar</h2>
+                <p style="font-size: 18px;">Aranwa Hotels Resorts & Spas pertenece al Grupo San Pablo; la red más grande
+                    de salud privada del
+                    Perú. La empresa, desde 1991, se dedica a cuidar y proteger la salud de los peruanos, con médicos
+                    altamente especializados, personal de apoyo calificado, equipos de última generación y la más
+                    moderna infraestructura.</p>
+                <p style="font-size: 18px;">En este tiempo, el Grupo ha adquirido todo el conocimiento médico y los
+                    estándares de servicio
+                    necesarios para lanzar un producto que no solo se enfoca en el descanso y las vacaciones, sino
+                    también en fomentar el bienestar y la salud de todos sus huéspedes, estimulando un estilo de vida
+                    más saludable a través de la medicina preventiva complementaria. Se busca llevar al huésped a una
+                    experiencia de cambio de vida.</p>
+                <p style="font-size: 18px;">Es así como Aranwa Sacred Valley Hotel & Wellness ofrece la primera cámara
+                    hiperbárica en un hotel,
+                    que permite realizar tratamientos de oxigenación total, recuperación, reducción de la fatiga,
+                    manchas y arrugas en la piel, entre otros. De esta manera, utilizando todo el conocimiento médico y
+                    la tecnología, el spa en Aranwa Sacred Valley Hotel & Wellness ofrece diferentes programas de
+                    bienestar de acuerdo a las necesidades de nuestros huéspedes. Estos programas ofrecen beneficios
+                    estéticos (como el «Programa de belleza») y médicos (como «Control de peso» o «Recuperación
+                    cardiovascular»).</p>
+            </div>
+            <div class="imageB-container">
+                <img src="../imagenes/BienestarSalud1.png" alt="Imagen de un salon de spa Aranwa">
+                <img src="../imagenes/BienestarSalud2.png" alt="Imagen de Meditacion">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container top">
+            <div class="subscribe" id="contact">
+                <h2>Suscríbete</h2>
+                <p>Recibe las últimas noticias y promociones directamente en tu correo</p>
+                <div class="input flex">
+                    <input type="email" placeholder="Ingresa tu correo ">
+                    <button class="flex1" onclick="redireccion()">
+                        <span>Registrarme</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content grid  top">
+                <div class="box">
+                    <div class="logo">
+                        <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa" width="180" height="50">
+                    </div>
+                    <div class="social flex">
+                        <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2>ARANWA</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>DESTINOS</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/CUSCO.html">Cusco</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/SACRED VALLEY.html">Valle
+                                Sagrado</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/COLCA.html">Colca</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/PARACAS.html">Paracas</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/VICHAYITO.html">Vichayito</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>SERVICIOS</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Eventos.html">Eventos</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Spa.html">Spa</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Bodas.html">Bodas</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>Información de Contacto</h2>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Oficionas Coorporativas</h3>
+                            <p>​Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+                        </div>
+                    </div>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Central de Reservas</h3>
+                            <p>511 207-0440</p>
+                        </div>
+                    </div>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Correo de Reserva:</h3>
+                            <p>reservas@aranwahotels.com</p>
+                            <h3>Correo de Contacto:</h3>
+                            <p>consultas@aranwahotels.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pie inferior -->
+        <div class="footer-bottom">
+            <a href="../html/SiteMap.html">Ver Sitemap del sitio</a>
+            <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARANWA HOTELS</title>
+  <link rel="stylesheet" href="css/styleAranwa.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.2.0/jquery.countdown.min.js"></script>
+ 
+  <script src="js/inicio.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo" onclick="redireccionAranwa()">
+          <img src="imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="html/ServiciosDetalles.html">Servicios</a></li>
+          <li><a href="html/Nosotros.html">Nosotros</a></li>
+          <li><a href="html/inicioreserva.html">Reservas</a></li>
+          <li><a href="html/Hoteles.html">Hoteles</a></li>
+          <li><a href="html/Login.html">Login/Registrarme</a></li>
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>511 207-0440</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <script>      /* AL SCROLLEAR HACIA ABAJO EL MENÚ DE OPCIONES ES VISIBLE CAMBIANDO AL COLOR NEGRO */
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobilemmenu);
+
+    function mobilemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>DONDE TUS RECUERDOS COMIENZAN</h1>
+      <p style="font-size: 27px;">Descubre el lugar donde divertirte y disfrutar mucho</p>
+      <div class="content grid">
+        <div class="box">
+          <span>FECHA DE LLEGADA</span> <br>
+          <input type="date" placeholder="27/20/2024">
+        </div>
+        <div class="box">
+          <span>FECHA DE SALIDA</span> <br>
+          <input type="date" placeholder="27/20/2024">
+        </div>
+        <div class="box">
+          <span>ADULTOS</span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <span>NIÑOS</span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <button class="flex1" onclick="redireccionReserva()">
+            <span>RESERVA</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="contrainer">
+      <div class="heading">
+        <h5 style="font-size: 25px;">EXPLORAR</h5>
+        <h2>Estamos aquí para brindarte una experiencia inolvidable y llena de placer</h2>
+      </div>
+      <div class="content flex top">
+        <div class="left">
+          <h3 style="text-align: center;">Aranwa Hotels Resorts & Spa</h3>
+          <p style="font-size: 20px; text-align: justify;">Es una colección de hoteles que ofrece la más atractiva guía
+            de destinos en el Perú. La combinación perfecta entre cultura y bienestar. Ubicados en paisajes emblemáticos
+            como el Valle Sagrado de los Incas, Cusco, Arequipa y Paracas, cada propiedad está diseñada para brindar una
+            experiencia auténtica, en armonía con la historia y la naturaleza del entorno. Los huéspedes pueden
+            disfrutar de spas de clase mundial, gastronomía peruana de alto nivel y recorridos culturales que enriquecen
+            el alma. Aranwa no es solo una estadía, es una inmersión profunda en la magia del Perú, ideal para quienes
+            buscan descanso, lujo y conexión con la tradición andina.
+          </p>
+          <button class="flex" onclick="redireccionNosotros()">
+            <span>Conocer más...</span>
+            <i class="fas fa-arrow-circle"></i>
+          </button>
+        </div>
+        <div class="right">
+          <img src="imagenes/aranwa-paracas.png" alt="Imagen del hotel Aranwa-Paracas" width="700" height="450">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="heading">
+            <h5 style="font-size: 30px; text-align: center;">HOTELES</h5>
+            <h3 style="text-align: center;">Aranwa Paracas Resort & Spa</h3>
+          </div>
+          <p style="text-align: justify;">La bahía de Paracas, ubicada en Pisco, ofrece una rica historia y diversidad
+            natural. El hotel Aranwa es un
+            moderno establecimiento ideal para desconectar y disfrutar en familia, pareja o grupo, con actividades para
+            niños. Su propuesta incluye amplias instalaciones, gastronomía exquisita y un servicio excepcional.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5 style="font-size: 30px; text-align: center;">HOTELES</h5>
+            <h3 style="text-align: center;">Aranwa Cusco Boutique Hotel</h3>
+          </div>
+          <p style="text-align: justify;">Aranwa Cusco Boutique Hotel es un hotel-boutique de 5 estrellas en el centro
+            de Cusco, que combina
+            historia, lujo y bienestar. Sus elegantes habitaciones ofrecen sistemas de oxígeno inteligente, baños estilo
+            spa con Suelo Radiante Eléctrico, duchas escocesas y tinas de hidromasaje, además de un servicio acogedor.
+            Ubicado en la calle San Juan de Dios, a pocas cuadras de la Plaza de Armas, invita a sus huéspedes a conocer
+            su colección de arte con audioguía. Es miembro de Historic Hotels Worldwide®, promoviendo el patrimonio y
+            los viajes culturales.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5 style="font-size: 30px; text-align: center;">HOTELES</h5>
+            <h3 style="text-align: center;">Aranwa Sacred Valley Hotel & Wellness</h3>
+          </div>
+          <p style="text-align: justify;">Aranwa Sacred Valley Hotel & Wellness, ubicado a orillas del río Vilcanota en
+            una antigua hacienda colonial
+            del siglo XVII, se encuentra a una hora y media de Cusco y a cuarenta minutos de la estación de tren de
+            Ollantaytambo, en ruta a Machu Picchu. Con habitaciones de estilo colonial y moderno, ofrece una experiencia
+            inolvidable en el místico Valle Sagrado, donde se fusionan la cultura inca y la majestuosidad colonial. Como
+            miembro de Historic Hotels Worldwide®, promueve el patrimonio y los viajes culturales en lugares históricos.
+          </p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5 style="font-size: 30px; text-align: center;">HOTELES</h5>
+            <h3 style="text-align: center;">Aranwa Pueblito Encantado del Colca</h3>
+          </div>
+          <p style="text-align: justify;">Aranwa Pueblito Encantado del Colca, ubicado en el distrito de Coporaque,
+            junto al río Colca y a tres horas
+            de Arequipa, ofrece un entorno de ensueño lleno de leyendas y tradiciones andinas y coloniales. A solo diez
+            minutos de Chivay, este hotel es la puerta de entrada al mágico Valle del Colca, rodeado de flora, fauna y
+            el majestuoso vuelo del cóndor. Los huéspedes disfrutan de sus exuberantes jardines, la imponente cordillera
+            de los Andes y cielos estrellados que crean un ambiente de encanto y serenidad.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5 style="font-size: 30px; text-align: center;">HOTELES</h5>
+            <h3 style="text-align: center;">Vichayito Bungalows & Carpas by Aranwa</h3>
+          </div>
+          <p style="text-align: justify;">El hotel Vichayito Bungalows & Carpas, ubicado en la playa Vichayito, ofrece
+            espectaculares puestas de sol,
+            una excelente ubicación y exquisita gastronomía. A solo veinte minutos de Máncora y quince de Los Órganos,
+            el hotel cuenta con vistas al mar turquesa, sin rocas ni acantilados, y está rodeado de árboles y palmeras
+            para garantizar privacidad y descanso. Con bungalows y carpas beduinas, brinda una experiencia única para
+            disfrutar del último refugio natural de la zona.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <section class="wrapper2">
+    <div class="container">
+      <div class="heading mtop">
+        <h5 style="font-size: 25px;">INSTALACIONES</h5>
+        <h2>Dando algo totalmente increíble</h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <i class="fas fa-door-open"></i>
+          <h3>Alojamiento Premium</h3>
+          <p>Habitaciones que combinan confort, estilo y vistas impresionantes, con amenidades de primera, diseñados
+            para tu descanso.</p>
+          <span class='far fa-long-arrow-alt-right' onclick="redimencionHotel()"></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-concierge-bell"></i>
+          <h3>Bufetes Gourmet</h3>
+          <p>Sabores únicos en un ambiente inigualable. Disfruta de nuestra selección exclusiva de platos.</p>
+          <span class='far fa-long-arrow-alt-right' onclick="redimencionHotel()"></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>Estacionamientos Privados</h3>
+          <p>Disfruta de estacionamiento seguro para tu vehículo, disponible todo el día para tu tranquilidad.</p>
+          <span class='far fa-long-arrow-alt-right' onclick="redimencionHotel()"></span>
+        </div>
+        <div class="box">
+          <i class="far fa-water"></i>
+          <h3>Piscina al Aire Libre</h3>
+          <p>Relájate en nuestra piscina rodeada de naturaleza, el lugar perfecto para desconectar y disfrutar del sol.
+          </p>
+          <span class='far fa-long-arrow-alt-right' onclick="redimencionHotel()"></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-spa"></i>
+          <h3>Centro de Relajación</h3>
+          <p>Disfruta un oasis de paz y tranquilidad, con exclusivos tratamientos y terapias diseñadas para renovar
+            cuerpo y mente.</p>
+          <span class='far fa-long-arrow-alt-right' onclick="redimencionHotel()"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="room wrapper2 top">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">NUESTROS CUARTOS</h5>
+        <h2>Habitaciones y suites fascinantes</h2>
+      </div>
+      <div class="content flex mtop">
+        <div class="left grid2">
+          <div class="box">
+            <i class="fas fa-desktop"></i>
+            <p>Costo Gratis</p>
+            <h3>Entretenimiento por cable</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-temperature-high"></i>
+            <p>Costo Gratis</p>
+            <h3>Aire acondicionado y calefacción</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-bath"></i>
+            <p>Costo Gratis</p>
+            <h3>Amenities de baño</h3>
+          </div>
+          <div class="box">
+            <i class="fal fa-signal"></i>
+            <p>Costo Gratis</p>
+            <h3>Wi-Fi de alta velocidad</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-mug-hot"></i>
+            <p>Costo Gratis</p>
+            <h3>Cafetera y selección de té</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-unlock-alt"></i>
+            <p>Costo Gratis</p>
+            <h3>Caja de seguridad</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img src="imagenes/Habitacion4.png" alt="Habitacion">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer mtop">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">OFERTAS EXCLUSIVAS</h5>
+        <h3>¡Oferta por tiempo limitado, tu momento de ahorrar a llegado!</h3>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="imagenes/duplex1.png" alt="Habitación Deluxe">
+          </div>
+          <div class="right">
+            <h4 style="text-align: center; font-size: 25px;">Habitación Deluxe, 1 cama King size</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p style="text-align: justify;">Las habitaciones Deluxe ofrecen una elegante decoración. Están equipadas con
+              Smart TV, teléfono, caja de
+              seguridad y calefacción. Los baños incluyen jacuzzi o bañera, ducha escocesa, calentador de toallas y
+              suelo radiante.</p>
+            <h5>S/800 / Noche</h5>
+            <button class="flex1" onclick="redimencionPagos()">
+              <span>Ver Disponibilidad</span>
+              <i class="fas fa-arrow-circle"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="imagenes/duplex2.png" alt="Habitacion Duplex Matrimonial">
+          </div>
+          <div class="right">
+            <h4 style="text-align: center; font-size: 25px;">Habitación Deluxe Matrimonial</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p style="text-align: justify;">Las habitaciones Deluxe se ubican en el primer piso. Tienen hermosas vistas
+              al valle del Colca.
+              Constituyen la perfecta elección para un acogedor descanso: Área: 40 m2, 1 cama king, desayunador, ducha y
+              tina.</p>
+            <h5>S/622 / Noche</h5>
+            <button class="flex1" onclick="redimencionPagos()">
+              <span>Ver Disponibilidad</span>
+              <i class="fas fa-arrow-circle"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="imagenes/duplex3.png" alt="Habitacion Duplex Matrimonial">
+          </div>
+          <div class="right">
+            <h4 style="text-align: center; font-size: 25px;">Deluxe con salida al jardin, 1 cama king</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p style="text-align: justify;">Habitación Deluxe con salida al jardín en Aranwa Paracas, cuenta con una
+              cama king, baño con ducha y
+              bañera, terraza y acceso directo al jardín. Capacidad para dos adultos y opción dog-friendly con reserva.
+            </p>
+            <h5>S/1000.00 / Noche</h5>
+            <button class="flex1" onclick="redimencionPagos()">
+              <span>Ver Disponibilidad</span>
+              <i class="fas fa-arrow-circle"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="imagenes/duplex4.png" alt="Carpa Junior">
+          </div>
+          <div class="right">
+            <h4 style="text-align: center; font-size: 25px;">Carpa Junior, 1 Cama King</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p style="text-align: justify;">En Vichayito Aranwa su carpa ofrece aire acondicionado, terraza con vistas
+              al mar, ducha española y
+              amenidades con esencias delicadas para una experiencia de relajación única.</p>
+            <h5>S/722.00 / Noche</h5>
+            <button class="flex1" onclick="redimencionPagos()">
+              <span>Ver Disponibilidad</span>
+              <i class="fas fa-arrow-circle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area top">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">SERVICIOS</h5>
+        <h3>Todo lo que necesitas a un click</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="imagenes/restauranteAranwa.png" alt="Restaurante de Aranwa">
+        </div>
+        <div class="right">
+          <ul>
+            <li>Alojamiento de Lujo</li>
+            <li>Spa y Bienestar</li>
+            <li>Restaurantes y Gastronomía</li>
+            <li>Salones de Eventos y Bodas</li>
+            <li>Tours y Actividades Culturales</li>
+            <li>Entretenimiento y Recreación</li>
+          </ul>
+          <p style="font-size: 20px; text-align: justify;">En Aranwa Hotels Resorts & Spas, nos esforzamos por brindar
+            una experiencia completa de lujo y comodidad a
+            nuestros huéspedes. Ofrecemos alojamientos elegantes y confortables que reflejan la riqueza cultural de cada
+            región, junto con centros de spa que incluyen terapias de relajación inspiradas en la tradición andina para
+            garantizar el bienestar de cada visitante. Nuestros restaurantes gourmet combinan lo mejor de la cocina
+            peruana e internacional, y contamos con salones de eventos y bodas diseñados para celebraciones y reuniones
+            inolvidables, con un servicio atento y personalizado. Además, ofrecemos actividades culturales, tours
+            guiados y opciones de recreación como piscinas, yoga y excursiones de aventura, para crear momentos únicos
+            en cada estancia.</p>
+          <button class="flex1" onclick="redireccionServiciosDetalles()">
+            <span>Conocer más</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="customer top">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">TESTIMONIOS </h5>
+        <h3>Las voces de quienes ya nos escogieron</h3>
+      </div>
+
+      <div class="owl-carousel owl-theme mtop">
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 style="font-size: 25px;">Excelente</h3>
+          <p style="font-size: 17px; text-align: justify;">Me encantó el Aranwa. Amplias instalaciones, piscina
+            temperada, zona de juegos (tenis, futbolín, etc). La
+            comida deliciosa, las habitaciones son súper cómodas. Aparte tienen actividades para niños y en la noche del
+            fin de semana hubo una tocada con una banda que amenizó la noche. ¡Por otro lado, el trato del personal es
+            súper cálido, están pendientes de ti en todo momento, a mí y a mi grupo nos atendió la señorita Ruth
+            Estrada, de una manera personalizada, y muy amable, una linda! Definitivamente recomiendo este hotel. ¡Ya
+            quiero volver!</p>
+          <p>Setiembre 2022</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="imagenes/pisinaAranwa.png" alt="Foto de perfil del usuario">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 style="font-size: 25px;">Excelente</h3>
+          <p style="font-size: 17px; text-align: justify;">¡Un verdadero hotel boutique de lujo a precios muy
+            económicos, ya que si los comparo con otros hoteles de 5
+            estrellas a más, cuyo ticket no baja de $500 la noche, esta opción te permite vivir la experiencia de otros
+            superhoteles sin envidiarles nada! El servicio personalizado realmente te hace sentirte en casa. ¡Toda una
+            experiencia imposible de no reportarla! Muchas gracias a todo el personal que me atendió de una manera súper
+            amable. También un especial agradecimiento a la Romy, gerente del hotel.</p>
+          <p>Agosto 2022</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="imagenes/fondAranwa.png" alt="Foto de perfil del usuario">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 style="font-size: 25px;">Excelente</h3>
+          <p style="font-size: 17px; text-align: justify;">Fuimos a pasar un descanso familiar, la experiencia fue
+            maravillosa, un lugar hermoso, rodeado de
+            naturaleza, la naturaleza en su mayor expresión, combinado de comodidades que su categoría merece, un lugar
+            con una paz ambiental y emocional, gracias a todo su equipo por hacer nuestra experiencia familiar sea
+            inmemorable, esos recuerdos no se borran y quedan marcados en nuestra experiencia de convivencia, resaltamos
+            mucho la calidez de servicio de parte de Fiorela, esos detalles de atención llevan a un nivel superior la
+            estadía, Gracias a todo su equipo por tan maravillosa experiencia. De seguro volveremos a revivir en
+            familia.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="imagenes/famAranwa.png" alt="Foto de perfil del usuario">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="imagenes/Aranwa1.png" alt="Recuerdo 1">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa2.png" alt="Recuerdo 2">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa3.png" alt="Recuerdo 3">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa4.png" alt="Recuerdo 4">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa5.png" alt="Recuerdo 5">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa6.png" alt="Recuerdo 6">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa7.png" alt="Recuerdo 7">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa8.png" alt="Recuerdo 8">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa9.png" alt="Recuerdo 9">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/Aranwa10.png" alt="Recuerdo 10">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+  <section class="blog top">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">BLOG</h5>
+        <h3>Nos gusta sorprenderte: conoce las novedades</h3>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="img">
+            <img src="imagenes/vozanimalAranwa.png" alt="Afiche de voz animal">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <h3 style="text-align: center;">Aranwa Hotels Resorts & Spas se suma a la noble labor de Voz Animal</h3>
+            <p style="text-align: justify;"> Aranwa Hotels donará parte de las ventas de su programa “Dog Friendly” al
+              albergue Voz Animal, dedicado
+              al rescate y adopción de animales. Con esta estancia, los huéspedes pueden disfrutar con sus mascotas y
+              colaborar con una causa solidaria.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="imagenes/aniversarioAranwa.png" alt="Afiche del Anariversario de Aranwa">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <h3 style="text-align: center;">Aranwa Hotels Resorts & Spas celebra su 15° aniversario “Convirtiendo viajes
+              en leyenda” en 5 destinos
+              de Perú</h3>
+            <p style="text-align: justify;">Aranwa Hotels celebra su 15° aniversario ofreciendo hospitalidad única en
+              cinco destinos de Perú. La
+              celebración central fue en su hotel Aranwa Sacred Valley, reafirmando su compromiso con experiencias
+              culturales y bienestar para los huéspedes.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="imagenes/picafloresAranwa.png" alt="Foto de un picaflor">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <h3 style="text-align: center;">Avistamiento de picaflores en Valle Sagrado</h3>
+            <p style="text-align: justify;"> Perú es tercero en biodiversidad de aves, y en Aranwa Sacred Valley se
+              avistan 8 especies de picaflores,
+              incluyendo el endémico Green and White Hummingbird. El hotel restaura flora nativa para atraerlos; los
+              jardines y la piscina son los mejores lugares para verlos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Suscríbete</h2>
+        <p>Recibe las últimas noticias y promociones directamente en tu correo</p>
+        <div class="input flex">
+          <input type="email" placeholder="Ingresa tu correo ">
+          <button class="flex1" onclick="redireccion()">
+            <span>Registrarme</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="imagenes/logoAranwa.png" alt="Logo de Aranwa" width="180" height="50">
+          </div>
+          <div class="social flex">
+            <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+              <i class="fab fa-tripadvisor"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>ARANWA</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/Nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>DESTINOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/CUSCO.html">Cusco</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/SACRED VALLEY.html">Valle Sagrado</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/COLCA.html">Colca</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/PARACAS.html">Paracas</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/VICHAYITO.html">Vichayito</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>SERVICIOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/Eventos.html">Eventos</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/Spa.html">Spa</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="html/Bodas.html">Bodas</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Información de Contacto</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Oficionas Coorporativas</h3>
+              <p>​Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Central de Reservas</h3>
+              <p>511 207-0440</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Correo de Reserva:</h3>
+              <p>reservas@aranwahotels.com</p>
+              <h3>Correo de Contacto:</h3>
+              <p>consultas@aranwahotels.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pie inferior -->
+      <div class="footer-bottom">
+        <a href="html/SiteMap.html">Ver Sitemap del sitio</a>
+        <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+
+</body>
+
+</html>

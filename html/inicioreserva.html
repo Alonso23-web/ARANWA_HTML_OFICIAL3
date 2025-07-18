@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas - Aranwa Hotel</title>
+  <link rel="stylesheet" href="../css/styleinicioreserva.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="../js/script.js"></script>
+  <script src="../js/reserva.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo" onclick="redireccionAranwa()">
+                    <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="ServiciosDetalles.html">Servicios</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="inicioreserva.html">Reservas</a></li>
+                    <li><a href="Hoteles.html">Hoteles</a></li>
+                    <li><a href="Login.html">Login/Registrarme</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="head_contact">
+                    <i class="fas fa-phone-volume"></i>
+                    <span>511 207-0440</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobilemmenu);
+
+        function mobilemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <div class="progress-bar">
+        <div class="step active">
+            <span>1</span>
+            <p>Adultos y Niños</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <span>2</span>
+            <p>Días de estancia</p> 
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <span>3</span>
+            <p>Alojamientos</p> 
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <span>4</span>
+           <p>Total</p> 
+        </div>
+    </div>
+   <main class="content">
+    <h1>Huéspedes y Habitaciones</h1>
+   <form id="guest-form">
+    <div class="form-group">
+        <label for="adults">Adultos</label>
+        <input type="number" id="adults" name="adults" min="1" max="10" value="0" required>
+    </div>
+    <div class="form-group">
+        <label for="children">Niños</label>
+        <input type="number" id="children" name="children" min="0" max="10" value="0" required>
+    </div>
+    
+    <div id="children-ages"></div>
+    <button id="update-guests-rooms">Actualizar Huéspedes y Habitaciones</button>
+</form>
+    
+</main>
+</body>
+
+</html>
+<footer>
+  <div class="container">
+    <!-- Sección de suscripción con fondo especial -->
+    <div class="subscribe-section" id="contact">
+      <div class="subscribe-container">
+        <h2>Suscríbete</h2>
+        <p>Recibe los últimos noticias y promociones directamente en tu correo.</p>
+        <div class="subscribe-form">
+          <input type="email" placeholder="Ingresa tu correo">
+          <button class="subscribe-btn">Registrarme</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Contenido principal del footer -->
+    <div class="footer-content">
+      <!-- Columna del logo y redes sociales -->
+      <div class="footer-column logo-social">
+        <img src="../imagenes/logoAranwa.png" alt="Aranwa Hotels" class="footer-logo">
+        <div class="social flex">
+          <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+            <i class="fab fa-tripadvisor"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna ARANWA -->
+      <div class="footer-column">
+        <h3>ARANWA</h3>
+        <ul>
+          <li><a href="../html/Nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna DESTINOS -->
+      <div class="footer-column">
+        <h3>DESTINOS</h3>
+        <ul>
+          <li><a href="../html/CUSCO.html">Cusco</a></li>
+          <li><a href="../html/SACRED VALLEY.html">Valle Sagrado</a></li>
+          <li><a href="../html/COLCA.html">Colca</a></li>
+          <li><a href="../html/PARACAS.html">Paracas</a></li>
+          <li><a href="../html/VICHAYITO.html">Vichayito</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna SERVICIOS -->
+      <div class="footer-column">
+        <h3>SERVICIOS</h3>
+        <ul>
+          <li><a href="../html/Eventos.html">Eventos</a></li>
+          <li><a href="../html/Spa.html">Spa</a></li>
+          <li><a href="../html/Bodas.html">Bodas</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna de Contacto -->
+      <div class="footer-column">
+        <h3>Información de Contacto</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Oficinas Corporativas:</strong><br>
+            Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+
+          <p><i class="fas fa-phone"></i> <strong>Central de Reservas:</strong><br>
+            511 207-0440</p>
+
+          <p><i class="fas fa-envelope"></i> <strong>Correo de Reserva:</strong><br>
+            <a href="mailto:reservas@aranwahotels.com">reservas@aranwahotels.com</a>
+          </p>
+
+          <p><i class="fas fa-envelope"></i> <strong>Correo de Contacto:</strong><br>
+            <a href="mailto:consultas@aranwahotels.com">consultas@aranwahotels.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie inferior -->
+    <div class="footer-bottom">
+      <a href="../html/SiteMap.html">Ver Sitemap del sitio</a>
+      <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

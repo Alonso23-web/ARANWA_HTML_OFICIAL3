@@ -1,0 +1,1081 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none; 
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+/*-------------header--------- */
+header {
+background: #95916b;
+padding: 15px 0;
+color: #ffffff;
+transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+}
+
+.hamburger {
+display: none;
+cursor: pointer;
+}
+
+.bar {
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+background: #ffffff;
+transition: all 0.3s ease-in-out;
+}
+
+.nav-menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 40px;
+}
+
+header ul {
+padding: 0;
+margin: 0;
+}
+
+header li {
+list-style: none;
+}
+
+header ul li a {
+font-size: 15px;
+color: #000000;
+text-transform: uppercase;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+color: #857353;
+}
+
+.head_contact {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 14px;
+color: #ffffff;
+}
+
+.head_contact i {
+width: 40px;
+height: 40px;
+background: #ffffff;
+color: #857353;
+border-radius: 50%;
+font-size: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid #ECE3D2;
+transform: rotate(-45deg);
+}
+
+header.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+background: #000000;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+z-index: 999;
+padding: 10px 0;
+}
+
+header.sticky ul li a {
+color: #ffffff;
+}
+
+header.sticky .head_contact {
+display: none;
+}
+
+header.sticky .nav-menu {
+justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+header .head_contact {
+  display: none;
+}
+
+header.sticky .nav-menu {
+  background: #857353;
+}
+
+.navbar {
+  flex-wrap: wrap;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 11rem;
+  left: -100%;
+  flex-direction: column;
+  background: #a58a58;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  gap: 15px;
+  transition: all 0.5s ease;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+header li {
+  margin: 15px 0;
+}
+
+header ul li a {
+  color: #ffffff;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+}
+/*-------------header--------- */
+
+/*-------------INICIO--------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+.home {
+  background-image: url("../html/imagenes/aranwa-valle-sagrado.png");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.home h1 {
+  font-family: 'Great Vibes', 'cursive';
+  font-size: 55px;
+  color: #ffffff;
+  padding-top: 15%;
+}
+
+.home p {
+  color: #ffffff;
+  padding-top: 3%;
+}
+
+.home .content {
+  text-align: left;
+  color: black;
+  margin-top: 8%;
+}
+
+.home .box {
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 25px;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease; 
+  width: 100%;
+  max-width: 200px; 
+}
+
+.home .box:hover {
+  transform: scale(1.05); 
+}
+
+.home input, .home select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.home input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.5); 
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  background: #CC8C18;
+  color: #ffffff;
+  padding: 12px 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+button:hover {
+  background: #6c624f; 
+}
+
+button i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+button span {
+  margin-top: 5px;
+}
+/*-------------INICIO--------- */
+
+.text-section {
+    padding: 40px 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    background-color: #ffffff; /* Fondo blanco */
+  }
+  
+  .text-section p {
+    font-size: 1.2rem; /* Tamaño de letra */
+    line-height: 1.8; /* Altura de línea */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+  }
+  
+  .text-section strong {
+    font-weight: bold; /* Negrita para palabras destacadas */
+    color: #000; /* Color más oscuro para resaltar */
+  }
+  
+
+/*-------------HOTEL CUSCO - INICIO--------- */
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mtop {
+    margin-top: 30px;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h3 {
+    font-size: 2rem;
+    color: #663300;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Section Styling */
+.hotel {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content .right {
+    max-width: 800px;
+    text-align: center;
+}
+
+.content .right p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .heading h3 {
+        font-size: 1.5rem;
+    }
+
+    .content .right p {
+        font-size: 0.9rem;
+    }
+}
+
+/*-------------HOTEL CUSCO - INICIO--------- */
+
+.hotel-info-section {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.hotel-info-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.hotel-info-grid div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hotel-info-grid i {
+  color: #663300;
+  font-size: 1.2rem;
+}
+
+.hotel-info-grid a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hotel-info-grid a:hover {
+  color: #663300;
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hotel-info-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .hotel-info-grid div {
+    justify-content: center;
+  }
+}
+
+/* -------Estilos para centrar el video */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0; /* Espaciado alrededor del video */
+    background-color: #f5f5f5; /* Opcional: cambia el fondo si lo necesitas */
+  }
+  
+  .video-container {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .video-container iframe {
+    border-radius: 10px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para estilo */
+    border: none; /* Elimina el borde predeterminado */
+  }
+
+  /* Sección de Servicios */
+  .services-section {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+  }
+  
+  .services-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #663300; /* Color marrón */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 30px; /* Espaciado entre columnas */
+  }
+  
+  .services-grid p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .services-grid i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #663300; /* Color marrón */
+  }
+  
+  /* Responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* Una columna */
+    }
+  }
+
+ /* Sección Servicios e Instalaciones */
+.services-section {
+  padding: 40px 20px;
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+.services-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #663300; /* Color marrón */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 20px; /* Espaciado entre columnas */
+}
+
+.services-grid p {
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaciado entre el icono y el texto */
+}
+
+.services-grid i {
+  font-size: 1.2rem;
+  color: #663300; /* Color marrón para los iconos */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  }
+}
+
+
+  /* -------------- Sección de habitaciones */
+.rooms-section {
+  background-color: #f5f5f5; /* Fondo claro */
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.room-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.room-text {
+  flex: 1;
+  max-width: 50%;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-text h3 {
+  font-size: 1.8rem;
+  color: #663300;
+  margin-bottom: 15px;
+}
+
+.room-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.room-text a.room-link {
+  color: #663300;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.room-image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.room-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .room-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .room-text, .room-image {
+    max-width: 100%;
+  }
+
+  .room-image img {
+    width: 90%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+  }
+}
+
+  /*-------------- Sección de Spa */
+  .spa-section {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+  }
+  
+  .spa-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Espaciado entre texto e imagen */
+  }
+  
+  .spa-text {
+    flex: 1;
+    background-color: #f7f5f3; /* Fondo similar al diseño */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .spa-text h2 {
+    font-size: 2rem;
+    color: #663300; /* Color marrón */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .spa-text p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .spa-text a.brochure-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #663300;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .spa-text a.brochure-link:hover {
+    text-decoration: underline;
+  }
+  
+  .spa-image img {
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño máximo de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .spa-section .container {
+      flex-direction: column; /* Apila el texto y la imagen */
+    }
+  
+    .spa-image img {
+      max-width: 100%; /* Imagen ajusta al contenedor */
+    }
+  }
+  
+
+  /* ------------- Sección de actividades */
+.activities-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+  }
+  
+  .activities-heading {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #663300;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 30px; /* Más espacio entre las tarjetas */
+  }
+  
+  .activity {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Más sombra para destacar */
+  }
+  
+  .activity img {
+    width: 100%;
+    height: 400px; /* Aumenta aún más la altura de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes llenen el espacio de forma proporcional */
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .activity:hover img {
+    transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+  }
+  
+  .activity-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 15px 0; /* Aumenta el tamaño del subtítulo */
+    font-size: 1.2rem; /* Subtítulos más grandes */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .activities-grid {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+  
+    .activity img {
+      height: 350px; /* Ajusta la altura para pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .activities-grid {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+  
+    .activity img {
+      height: 300px; /* Ajusta la altura para pantallas pequeñas */
+    }
+  
+    .activity-caption {
+      font-size: 1rem; /* Subtítulos más pequeños en pantallas pequeñas */
+    }
+  }
+
+  /*--------- Sección Restaurante & Bar --------*/
+  .restaurant-bar-section {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+  }
+  
+  .restaurant-bar-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #663300; /* Color marrón */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .restaurant-bar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Tres columnas */
+    gap: 20px; /* Espaciado entre columnas */
+  }
+  
+  .restaurant {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  .restaurant img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .restaurant:hover img {
+    transform: scale(1.05); /* Efecto zoom al pasar el cursor */
+  }
+  
+  .caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* Responsivo para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .restaurant-bar-grid {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+  }
+  
+
+
+/*---- Diseño general del footer ----*/
+footer {
+  background: #222;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*----- SUBSCRIBIRSE -----*/
+footer {
+  background: #222;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.subscribe {
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto 40px;
+}
+
+.subscribe h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subscribe p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.subscribe .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe input[type="email"] {
+  width: 70%;
+  border-radius: 25px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.subscribe button.flex1 {
+  background: #827050;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.subscribe button.flex1:hover {
+  background: #5f4a39;
+  transform: scale(1.05);
+}
+
+footer .content.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+footer .box {
+  font-size: 14px;
+}
+
+footer .box h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+footer .box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .box ul li {
+  margin-bottom: 10px;
+  color: #bbb;
+}
+
+footer .box ul li i {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+footer .social i {
+  padding: 10px;
+  background: #555;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+footer .social i:hover {
+  background: #777;
+}
+
+footer .icon.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+footer .icon.flex .i {
+  margin-right: 10px;
+  color: #bbb;
+}
+
+footer .icon.flex .i i {
+  font-size: 18px;
+}
+
+footer .icon.flex .text h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+footer .icon.flex .text p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #bbb;
+}
+
+@media (max-width: 1024px) {
+  footer .content.grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .subscribe input[type="email"] {
+    width: 80%;
+  }
+
+  .subscribe button.flex1 {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .content.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subscribe {
+    max-width: 100%;
+  }
+
+  .subscribe input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe button.flex1 {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .social i {
+  padding: 12px;
+  background: #444;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+footer .social i:hover {
+  background: #6aa8a0;
+}
+
+
+/* Pie inferior */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom a {
+  color: #827050;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+.footer-bottom p {
+  color: #bbb;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+  }
+  
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-column {
+    margin-bottom: 30px;
+  }
+}

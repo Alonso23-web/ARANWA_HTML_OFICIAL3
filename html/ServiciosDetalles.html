@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Aranwa</title>
+  <link rel="stylesheet" href="../css/styleServicios.css">
+  <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo" onclick="redireccionAranwa()">
+          <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../html/ServiciosDetalles.html">Servicios</a></li>
+          <li><a href="../html/Nosotros.html">Nosotros</a></li>
+          <li><a href="../html/inicioreserva.html">Reservas</a></li>
+          <li><a href="../html/Hoteles.html">Hoteles</a></li>
+          <li><a href="../html/Login.html">Login/Registrarme</a></li>
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>511 207-0440</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobilemmenu);
+
+    function mobilemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+  <section class="event service" id="event">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">EVENTOS</h5>
+        <h3>Todo lo que necesitas a un click</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="../imagenes/Evento.png" alt="Eventos de Aranwa">
+        </div>
+        <div class="right">
+          <p style="text-align: justify;">En Aranwa, transformamos tus eventos en experiencias inolvidables. Nuestro
+            equipo de expertos se asegurará
+            de que cada detalle esté perfectamente cuidado, ofreciendo un entorno de lujo y confort que eleva cualquier
+            ocasión especial.</p>
+          <p style="text-align: justify;">Desde reuniones corporativas hasta celebraciones sociales, contamos con
+            espacios versátiles y servicios
+            personalizados que se adaptan a tus necesidades. ¡Reserva tu evento con nosotros y haz de cada momento algo
+            único y memorable!</p>
+          <button class="flex1" onclick="redireccionEventos()">
+            <span>Conocer más</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="spa service">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">SPA</h5>
+        <h3>Todo lo que necesitas a un click</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="../imagenes/Spa.png" alt="Spa de Aranwa">
+        </div>
+        <div class="right">
+          <p style="text-align: justify;">En los SPA de Aranwa, te ofrecemos una experiencia única de relajación y
+            bienestar con tratamientos
+            diseñados para renovar cuerpo y mente. Disfruta de masajes relajantes, terapias faciales, envolturas
+            corporales y programas personalizados que combinan técnicas modernas con ingredientes naturales como aceites
+            esenciales y hierbas andinas.
+          <p>
+          <p style="text-align: justify;">Nuestro equipo de expertos se asegurará de que vivas un momento de serenidad
+            en un entorno de lujo y
+            confort. ¡Reserva tu experiencia y renueva tus energías en Aranwa!
+          <p>
+            <button class="flex1" onclick="redireccionSpa()">
+              <span>Conocer más</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wedding service">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">BODAS</h5>
+        <h3>Todo lo que necesitas a un click</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="../imagenes/Bodas.png" alt="Bodas de Aranwa">
+        </div>
+        <div class="right">
+          <p style="text-align: justify;">En Aranwa, hacemos de tu boda un momento inolvidable. Nuestro equipo de
+            expertos se encargará de cuidar
+            cada detalle para que vivas una celebración llena de magia y romanticismo en un entorno único de lujo y
+            confort.</p>
+          <p style="text-align: justify;">Desde ceremonias íntimas hasta recepciones espectaculares, contamos con
+            espacios exclusivos y servicios
+            personalizados que se adaptan a tus sueños. ¡Reserva tu fecha y comienza a escribir el capítulo más especial
+            de tu historia de amor con Aranwa!</p>
+          <button class="flex1" onclick="redireccionBodas()">
+            <span>Conocer más</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog top" id="blog">
+    <div class="container">
+      <div class="heading">
+        <h5 style="font-size: 25px;">ENTRETENIMIENTO Y RECREACIÓN</h5>
+        <h3>Diversión que conecta y renueva</h3>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DNiños1.png" alt="Imagen de Full Day Kids en Aranwa Valle Sagrado">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Full Day Kids en Aranwa Valle Sagrado</h3>
+            <p style="text-align: justify;">Un día lleno de diversión y aprendizaje, con actividades recreativas al aire
+              libre, talleres creativos y
+              juegos guiados por un equipo especializado. Ideal para niños de todas las edades.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DNiños2.png" alt="Imagen de Clases de Cocina para Niños">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Clases de Cocina para Niños</h3>
+            <p style="text-align: justify;">Los pequeños chefs aprenden a preparar recetas sencillas como pizzas y
+              galletas, guiados por cocineros
+              expertos. Incluye delantal y certificado de participación.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DNiños3.png" alt="Imagen de Zona de Juegos Temáticos">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Zona de Juegos Temáticos</h3>
+            <p style="text-align: justify;">Espacios diseñados con seguridad y diversión en mente, que incluyen
+              toboganes, columpios, y áreas
+              interactivas para aprender jugando.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DNiños4.png" alt="Imagen de Talleres de Manualidades">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Talleres de Manualidades</h3>
+            <p style="text-align: justify;">Actividades creativas como pintura, escultura y diseño de souvenirs
+              personalizados, que incentivan la
+              imaginación y la expresión artística.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DAdulto1.png" alt="Imagen de Full Day Premium en Aranwa Paracas">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Full Day Premium en Aranwa Paracas</h3>
+            <p style="text-align: justify;">Combina la gastronomía de autor con actividades recreativas como paseos en
+              barco, billar, fogatas y una
+              experiencia de pisco personalizada. Incluye acceso a la piscina y menú de tres tiempos.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DAdulto2.png" alt="Imagen de Circuito de Aguas en Aranwa Valle Sagrado">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Circuito de Aguas en Aranwa Valle Sagrado</h3>
+            <p style="text-align: justify;">Vive una experiencia única de relajación con saunas, jacuzzis, pediluvio y
+              duchas escocesas, todo
+              diseñado para aliviar el estrés y revitalizar tu cuerpo y mente.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DAdulto3.png" alt="Imagen de Talleres de Mixología">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Talleres de Mixología</h3>
+            <p style="text-align: justify;">Aprende a preparar cócteles clásicos y exclusivos en un ambiente social y
+              relajado, con expertos
+              bartenders que te enseñarán los secretos de la coctelería.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DPet1.png" alt="Imagen de Dog Friendly en Aranwa Hotels">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Dog Friendly en Aranwa Hotels</h3>
+            <p style="text-align: justify;">Los hoteles ofrecen un kit especial que incluye cama, recipientes y snacks
+              para tu mascota. Además, con
+              cada reserva, contribuyes al apoyo del albergue Voz Animal.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DPet2.png" alt="Imagen de Paseos al Aire Libre">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Paseos al Aire Libre</h3>
+            <p style="text-align: justify;">Explora senderos naturales con tu mascota en entornos seguros y rodeados de
+              paisajes impresionantes,
+              ideales para caminatas y tiempo de calidad.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DPet3.png" alt="Imagen de Eventos Dog Friendly">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Eventos Dog Friendly</h3>
+            <p style="text-align: justify;">Actividades sociales donde las mascotas son protagonistas, como concursos,
+              juegos y espacios para
+              interactuar con otras familias y sus compañeros peludos.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DFamily1.png" alt="Imagen de Picnic en la Playa en Aranwa Vichayito">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Picnic en la Playa en Aranwa Vichayito</h3>
+            <p style="text-align: justify;">Una experiencia al aire libre para disfrutar en familia. Incluye una canasta
+              con alimentos frescos y un
+              ambiente ideal para relajarse frente al mar.</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DFamily2.png" alt="Imagen de Excursiones Familiares">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Excursiones Familiares</h3>
+            <p style="text-align: justify;">Paseos guiados para explorar la naturaleza, cultura y paisajes locales.
+              Incluyen transporte, guías
+              especializados y paradas en puntos emblemáticos.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DFamily3.png" alt="Imagen de Noches de Cine al Aire Libre">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Noches de Cine al Aire Libre</h3>
+            <p style="text-align: justify;">Disfruta de una noche mágica en familia bajo las estrellas, con películas
+              para todas las edades,
+              palomitas y bebidas incluidas.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DFamily4.png" alt="Imagen de Clases de Ceviche en Aranwa Vichayito">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Clases de Ceviche en Aranwa Vichayito</h3>
+            <p style="text-align: justify;">Una actividad culinaria donde la familia puede aprender a preparar el plato
+              emblemático del Perú,
+              combinando tradición y diversión.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DLove2.png" alt="Imagen de Atardeceres en Aranwa Paracas">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Atardeceres en Aranwa Paracas</h3>
+            <p style="text-align: justify;">Vive una experiencia única con un paseo en barco al atardecer, acompañado de
+              música suave y una copa de
+              vino para disfrutar con tu pareja.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DLove1.png" alt="Imagen de Romance en Aranwa Valle Sagrado">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Romance en Aranwa Valle Sagrado</h3>
+            <p style="text-align: justify;">Incluye cena a la luz de las velas, tratamientos de spa en pareja, y
+              detalles románticos como pétalos de
+              rosas y champán en la habitación.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DLove3.png" alt="Imagen de Cena Privada en la Playa">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Cena Privada en la Playa</h3>
+            <p style="text-align: justify;">Disfruten juntos de una velada romántica con un menú gourmet personalizado,
+              música en vivo y un ambiente
+              exclusivo frente al mar.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img src="../imagenes/DCultura1.png" alt="Imagen de Experiencias Culturales">
+            <span>ARANWA</span>
+          </div>
+          <div class="text">
+            <h3>Experiencias Culturales</h3>
+            <p style="text-align: justify;">Sumérgete en la cultura local con talleres de tejido, cerámica, danzas
+              típicas y visitas a comunidades
+              cercanas.</p>
+            <a href="https://api.whatsapp.com/send?phone=51981142612&text=Hola%20Recepci%C3%B3n%20de%20Aranwa%20Valle%20Sagrado%2C%20me%20interesa%20reservar%20el%20Full%20Day%20Kids."
+              target="_blank">RESERVAR<i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Suscríbete</h2>
+        <p>Recibe las últimas noticias y promociones directamente en tu correo</p>
+        <div class="input flex">
+          <input type="email" placeholder="Ingresa tu correo ">
+          <button class="flex1" onclick="redireccion()">
+            <span>Registrarme</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa" width="180" height="50">
+          </div>
+          <div class="social flex">
+            <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+              <i class="fab fa-tripadvisor"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>ARANWA</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Nosotros.html">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>DESTINOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/CUSCO.html">Cusco</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/SACRED VALLEY.html">Valle Sagrado</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/COLCA.html">Colca</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/PARACAS.html">Paracas</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/VICHAYITO.html">Vichayito</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>SERVICIOS</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Eventos.html">Eventos</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Spa.html">Spa</a></li>
+            <li><i class="fas fa-angle-double-right"></i><a href="../html/Bodas.html">Bodas</a></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Información de Contacto</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Oficionas Coorporativas</h3>
+              <p>​Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Central de Reservas</h3>
+              <p>511 207-0440</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Correo de Reserva:</h3>
+              <p>reservas@aranwahotels.com</p>
+              <h3>Correo de Contacto:</h3>
+              <p>consultas@aranwahotels.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pie inferior -->
+    <div class="footer-bottom">
+      <a href="../html/SiteMap.html">Ver Sitemap del sitio</a>
+      <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

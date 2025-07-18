@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS ARANWA</title>
+    <link rel="stylesheet" href="../css/styleEventos.css">
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo" onclick="redireccionAranwa()">
+                    <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../html/ServiciosDetalles.html">Servicios</a></li>
+                    <li><a href="../html/Nosotros.html">Nosotros</a></li>
+                    <li><a href="../html/inicioreserva.html">Reservas</a></li>
+                    <li><a href="../html/Hoteles.html">Hoteles</a></li>
+                    <li><a href="../html/Login.html">Login/Registrarme</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="head_contact">
+                    <i class="fas fa-phone-volume"></i>
+                    <span>511 207-0440</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobilemmenu);
+
+        function mobilemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <section class="evento general">
+        <div class="containers">
+            <div class="heading">
+                <h5>¡Organiza tu evento en Aranwa Hotels Resorts & Spas!</h5>
+                <h2>Te ofrecemos la mejor experiencia para ti y todos tus invitados.</h2>
+            </div>
+            <div class="info">
+                <div class="contact">
+                    <div class="line-separator"></div>
+                    <h4>Contamos con salones de eventos que se adaptan a tus necesidades y un servicio que superará tus
+                        expectativas.</h4>
+                    <h4>Para más información, puedes comunicarte con nuestro equipo de eventos:</h4>
+                    <div class="line-separator"></div>
+                    <a href="https://api.whatsapp.com/send?phone=51958640544" target="_blank">
+                        <i class="fas fa-phone-alt"></i> +51 958 640 544
+                    </a>
+                    <a href="mailto:eventos@aranwahotels.com">
+                        <i class="fas fa-envelope"></i> eventos@aranwahotels.com
+                    </a>
+                    <div class="line-separator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h3>Realiza eventos de impacto con nosotros </h3>
+            <h3>Cada reunión tiene un propósito. ¿Cuál es el tuyo?</h3>
+            <div class="logo">
+                <div class="icon-section">
+                    <div class="icon-item">
+                        <i class="fas fa-glass-cheers"></i>
+                        <p>Celebrar</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Decidir</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Educar</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Idear</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Networking</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-cogs"></i>
+                        <p>Producir</p>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fas fa-bullhorn"></i>
+                        <p>Promover</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="evento paracas">
+        <div class="containers">
+            <div class="content flex mtop">
+                <div class="left">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <img src="../imagenes/EventosPacaras1.png" alt="Spa Valle Imagen 1">
+                        </div>
+                        <div class="item">
+                            <img src="../imagenes/EventosPacaras2.png" alt="Spa Valle Imagen 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1 style="text-align: center;">Aranwa Paracas Resort & Spa</h1>
+                    <p style="text-align: justify;">El hotel cuenta con modernas y exclusivas instalaciones para eventos
+                        sociales y corporativos.
+                        Ofrecemos ambientes para conferencias, cócteles, fiestas y acontecimientos importantes; que se
+                        pueden celebrar: en el centro de convenciones, el Muelle Bar Lounge, la capilla, los jardines,
+                        entre otros.
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-church"></i>
+                            <p>150 personas (capilla)</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <p>470 personas (auditorio)</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tv"></i>
+                            <p>Equipos audiovisuales</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wifi"></i>
+                            <p>Wifi</p>
+                        </div>
+                    </div>
+                    <div class="cotiza">
+                        <span>Cotiza</span>
+                        <p></p>
+                        <a href="#">Eventos Corporativos</a>
+                        <a href="#">Eventos Sociales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="evento valley">
+        <div class="containers">
+            <div class="content flex mtop">
+                <div class="left">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <img src="../imagenes/EventosValley1.png" alt="Spa Colca Imagen 1">
+                        </div>
+                        <div class="item">
+                            <img src="../imagenes/EventosValley2.png" alt="Spa Colca Imagen 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1 style="text-align: center;">Aranwa Sacred Valley Hotel & Wellness</h1>
+                    <p style="text-align: justify;">El hotel cuenta con diversos ambientes para organizar eventos
+                        sociales y empresariales, entre los
+                        que se encuentran el patio, los jardines o el salón de usos múltiples.</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-church"></i>
+                            <p>100 personas (capilla)</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <p>250 personas (auditorio)</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tv"></i>
+                            <p>Equipos audiovisuales</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wifi"></i>
+                            <p>Wifi</p>
+                        </div>
+                    </div>
+                    <div class="cotiza">
+                        <span>Cotiza</span>
+                        <p></p>
+                        <a href="#">Eventos Corporativos</a>
+                        <a href="#">Eventos Sociales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="evento cusco">
+        <div class="containers">
+            <div class="content flex mtop">
+                <div class="left">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <img src="../imagenes/EventosCusco1.png" alt="Spa Colca Imagen 1">
+                        </div>
+                        <div class="item">
+                            <img src="../imagenes/EventosCusco2.png" alt="Spa Colca Imagen 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1 style="text-align: center;">Aranwa Cusco Boutique Hotel</h1>
+                    <p style="text-align: justify;">Cuenta con un amplio patio para desarrollar diferentes tipos de
+                        eventos: reuniones especiales,
+                        cenas, almuerzos, cócteles, recepciones, etc. La capacidad es de 100 personas (cóctel) y 80
+                        personas (auditorio).
+                    <p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-cocktail"></i>
+                            <p>100 personas (cóctel)</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <p>80 personas (auditorio)</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-tv"></i>
+                            <p>Equipos audiovisuales</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wifi"></i>
+                            <p>Wifi</p>
+                        </div>
+                    </div>
+                    <div class="cotiza">
+                        <span>Cotiza</span>
+                        <p></p>
+                        <a href="#">Eventos Corporativos</a>
+                        <a href="#">Eventos Sociales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                smartSpeed: 1000,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 1 },
+                    1000: { items: 1 },
+                },
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="container top">
+            <div class="subscribe" id="contact">
+                <h2>Suscríbete</h2>
+                <p>Recibe las últimas noticias y promociones directamente en tu correo</p>
+                <div class="input flex">
+                    <input type="email" placeholder="Ingresa tu correo ">
+                    <button class="flex1" onclick="redireccion()">
+                        <span>Registrarme</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content grid  top">
+                <div class="box">
+                    <div class="logo">
+                        <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa" width="180" height="50">
+                    </div>
+                    <div class="social flex">
+                        <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2>ARANWA</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>DESTINOS</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/CUSCO.html">Cusco</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/SACRED VALLEY.html">Valle
+                                Sagrado</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/COLCA.html">Colca</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/PARACAS.html">Paracas</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/VICHAYITO.html">Vichayito</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>SERVICIOS</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Eventos.html">Eventos</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Spa.html">Spa</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Bodas.html">Bodas</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>Información de Contacto</h2>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Oficionas Coorporativas</h3>
+                            <p>​Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+                        </div>
+                    </div>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Central de Reservas</h3>
+                            <p>511 207-0440</p>
+                        </div>
+                    </div>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Correo de Reserva:</h3>
+                            <p>reservas@aranwahotels.com</p>
+                            <h3>Correo de Contacto:</h3>
+                            <p>consultas@aranwahotels.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie inferior -->
+        <div class="footer-bottom">
+            <a href="../html/SiteMap.html">Ver Sitemap del sitio</a>
+            <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

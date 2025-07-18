@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESION INICIADA</title>
+    <link rel="stylesheet" href="../css/styleInicioSesion.css">
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo" onclick="redireccionAranwa()">
+                    <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa Hotels">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../html/ServiciosDetalles.html">Servicios</a></li>
+                    <li><a href="../html/Nosotros.html">Nosotros</a></li>
+                    <li><a href="../html/inicioreserva.html">Reservas</a></li>
+                    <li><a href="../html/Hoteles.html">Hoteles</a></li>
+                    <li><a href="../html/Login.html">Login/Registrarme</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="head_contact">
+                    <i class="fas fa-phone-volume"></i>
+                    <span>511 207-0440</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobilemmenu);
+
+        function mobilemmenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <section class="bienvenida">
+        <div class="container">
+            <h1>¡Bienvenidos a Aranwa Hotels!</h1>
+            <p>
+                Nos complace ofrecerte una experiencia inolvidable con nuestros servicios exclusivos,
+                beneficios únicos y atención personalizada para que tu estancia sea perfecta.
+            </p>
+        </div>
+    </section>
+
+    <section class="beneficios">
+        <div class="container">
+            <h2>Mis Beneficios</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <img src="../imagenes/Puntos.png" alt="Gana puntos">
+                    <p>Gana puntos por cada 1 USD</p>
+                </div>
+                <div class="beneficio-item">
+                    <img src="../imagenes/Noches canjeadas.png" alt="Noches canjeadas">
+                    <p>Noches canjeadas para familia y amigos</p>
+                </div>
+                <div class="beneficio-item">
+                    <img src="../imagenes/Descuentos.png" alt="Descuentos exclusivos">
+                    <p>Descuentos exclusivos sobre puntos</p>
+                </div>
+                <div class="beneficio-item">
+                    <img src="../imagenes/Promociones.png" alt="Promociones exclusivas">
+                    <p>Promociones con tarifas exclusivas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-bar">
+        <form id="search-form">
+            <div class="form-group">
+                <label for="destino"><i class="fas fa-map-marker-alt"></i></label>
+                <select id="destino" name="destino" required>
+                    <option value="" disabled selected>Elige un destino, hotel</option>
+                    <option value="Lima">Lima</option>
+                    <option value="Cusco">Cusco</option>
+                    <option value="Arequipa">Arequipa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="entrada"><i class="fas fa-calendar-alt"></i></label>
+                <input type="date" id="entrada" name="entrada" required>
+            </div>
+            <div class="form-group">
+                <label for="salida"><i class="fas fa-calendar-alt"></i></label>
+                <input type="date" id="salida" name="salida" required>
+            </div>
+            <div class="form-group">
+                <label for="personas"><i class="fas fa-user"></i></label>
+                <input type="number" id="personas" name="personas" placeholder="Número de personas" min="1" required>
+            </div>
+            <button type="submit" class="btn-buscar">Buscar</button>
+        </form>
+    </section>
+
+    <section class="comentarios">
+        <div class="container">
+            <h2>Comentarios</h2>
+            <form id="comentarios-form">
+                <textarea id="comentario" placeholder="Escribe tu comentario positivo o experiencia"
+                    required></textarea>
+                <button type="submit">Enviar comentario</button>
+            </form>
+            <div id="comentarios-lista">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container top">
+            <div class="subscribe" id="contact">
+                <h2>Suscríbete</h2>
+                <p>Recibe las últimas noticias y promociones directamente en tu correo</p>
+                <div class="input flex">
+                    <input type="email" placeholder="Ingresa tu correo ">
+                    <button class="flex1" onclick="redireccion()">
+                        <span>Registrarme</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content grid  top">
+                <div class="box">
+                    <div class="logo">
+                        <img src="../imagenes/logoAranwa.png" alt="Logo de Aranwa" width="180" height="50">
+                    </div>
+                    <div class="social flex">
+                        <a href="https://www.facebook.com/AranwaHotels/?locale=es_LA" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aranwahotels/?hl=es-la" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@AranwaHotels" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tripadvisor.com/Aranwa" target="_blank" title="TripAdvisor">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2>ARANWA</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>DESTINOS</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/CUSCO.html">Cusco</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/SACRED VALLEY.html">Valle
+                                Sagrado</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/COLCA.html">Colca</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/PARACAS.html">Paracas</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/VICHAYITO.html">Vichayito</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>SERVICIOS</h2>
+                    <ul>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Eventos.html">Eventos</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Spa.html">Spa</a></li>
+                        <li><i class="fas fa-angle-double-right"></i><a href="../html/Bodas.html">Bodas</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h2>Información de Contacto</h2>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Oficionas Coorporativas</h3>
+                            <p>​Av. Encalada 1420 of. 401, Santiago de Surco, Lima - Perú.</p>
+                        </div>
+                    </div>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Central de Reservas</h3>
+                            <p>511 207-0440</p>
+                        </div>
+                    </div>
+                    <div class="icon flex">
+                        <div class="i">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Correo de Reserva:</h3>
+                            <p>reservas@aranwahotels.com</p>
+                            <h3>Correo de Contacto:</h3>
+                            <p>consultas@aranwahotels.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pie inferior -->
+            <div class="footer-bottom">
+                <a href="../html/SiteMap.html">Ver Sitemap del sitio</a>
+                <p>&copy; 2025 Aranwa Hotels. Todos los derechos reservados.</p>
+            </div>
+    </footer>
+</body>
+
+</html>
